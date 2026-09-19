@@ -1,17 +1,52 @@
-# zylu_app
+# Zylu Employee Management App
 
-A new Flutter project.
+A Flutter-based Employee Management application developed as part of the Zylu Flutter Developer assignment.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- View all employees
+- Add new employees
+- Automatically generate Employee ID
+- Search employees by name, ID or designation
+- View employee details
+- Display joining date
+- Active/Inactive employee status
+- Highlight active employees with more than 5 years of experience in green
+- Pull-to-refresh employee list
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Mobile App
+- Flutter
+- Dart
+- GetX
+- HTTP
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Backend
+- PHP
+- MySQL
+- XAMPP
+
+## Project Structure
+
+```text
+lib/
+├── data/
+│   ├── models/
+│   │   └── employee_model.dart
+│   └── services/
+│       └── api_service.dart
+│
+├── modules/
+│   └── employee/
+│       ├── controllers/
+│       ├── views/
+│       └── widgets/
+│
+└── main.dart
+
+backend/
+├── config.php
+├── employees.php
+├── add_employee.php
+└── database.sql
